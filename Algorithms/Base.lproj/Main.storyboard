@@ -39,10 +39,31 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" id="cRG-dd-RGU"/>
+                    <connections>
+                        <segue destination="92K-Yd-ndu" kind="show" identifier="ShowAlgorithmViewController" id="hJS-wY-mk7"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZKS-7v-bIa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1855.2" y="787.55622188905556"/>
+            <point key="canvasLocation" x="1762" y="788"/>
+        </scene>
+        <!--Algorithm View Controller-->
+        <scene sceneID="keP-Xi-2CT">
+            <objects>
+                <tableViewController id="92K-Yd-ndu" customClass="AlgorithmViewController" customModule="Algorithms" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="4Db-IG-e8e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="92K-Yd-ndu" id="mKz-6L-567"/>
+                            <outlet property="delegate" destination="92K-Yd-ndu" id="NiL-NV-2k9"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tVz-k4-QVQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2650" y="788"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ai5-ns-NRF">

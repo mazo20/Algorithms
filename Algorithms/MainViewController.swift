@@ -10,13 +10,18 @@ import UIKit
 
 class MainViewController: UICollectionViewController {
     
-    fileprivate let mainViewCellReuseIdentifier = "MainViewCell"
+    fileprivate let mainViewCell = "MainViewCell"
+    fileprivate let showAlgorithmViewController = "ShowAlgorithmViewController"
     fileprivate let itemsPerRow: CGFloat = 2
     fileprivate let sectionInsets = UIEdgeInsets(top: 20, left: 16, bottom: 20, right: 16)
     
+    fileprivate let sortingTypes = ["Bubble sort", "Insertion sort", "Quicksort", "Heap sort", "Merge sort"]
+    fileprivate var selectedCell: Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("MainViewController loaded")
+        let nib = UINib(nibName: mainViewCell, bundle: nil)
+        collectionView.register(nib, forCellWithReuseIdentifier: mainViewCell)
     }
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -28,8 +33,9 @@ class MainViewController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: mainViewCellReuseIdentifier, for: indexPath) as! MainViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: mainViewCell, for: indexPath) as! MainViewCell
         
+        cell.titleLabel.text = sortingTypes[indexPath.row]
         cell.layer.cornerRadius = 8
         cell.clipsToBounds = true
         switch indexPath.row {
@@ -45,7 +51,21 @@ class MainViewController: UICollectionViewController {
             cell.backgroundColor = .purple
         }
         
+        
         return cell
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        selectedCell = indexPath.row
+        performSegue(withIdentifier: showAlgorithmViewController, sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let vc = segue.destination as? AlgorithmViewController, let selectedCell = selectedCell else {
+            print("Error getting AlgorithmViewController")
+            return
+        }
+        vc.title = sortingTypes[selectedCell]
     }
     
 }

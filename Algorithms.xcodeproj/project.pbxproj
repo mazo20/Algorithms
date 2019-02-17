@@ -15,6 +15,19 @@
 		54745A4E221990EE00919750 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54745A4D221990EE00919750 /* MainViewController.swift */; };
 		54745A502219943900919750 /* MainViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54745A4F2219943900919750 /* MainViewCell.xib */; };
 		54745A52221994A600919750 /* MainViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54745A51221994A600919750 /* MainViewCell.swift */; };
+		54745A542219964B00919750 /* AlgorithmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54745A532219964B00919750 /* AlgorithmViewController.swift */; };
+		54745A5622199A2100919750 /* AlgorithmDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54745A5522199A2100919750 /* AlgorithmDataSource.swift */; };
+		54745A5822199CC600919750 /* AlgorithmType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54745A5722199CC600919750 /* AlgorithmType.swift */; };
+		54745A5A22199E2B00919750 /* AlgorithmAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54745A5922199E2B00919750 /* AlgorithmAnimation.swift */; };
+		54745A5C22199F6500919750 /* SortingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54745A5B22199F6500919750 /* SortingItem.swift */; };
+		54745A5E2219A8F500919750 /* AlgorithmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54745A5D2219A8F500919750 /* AlgorithmView.swift */; };
+		54745A602219C04E00919750 /* AlgorithmCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54745A5F2219C04E00919750 /* AlgorithmCell.swift */; };
+		54745A622219C15800919750 /* AlgorithmCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54745A612219C15800919750 /* AlgorithmCell.xib */; };
+		54745A672219CA5B00919750 /* AlgorithmDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54745A662219CA5B00919750 /* AlgorithmDelegate.swift */; };
+		54745A692219CBA800919750 /* LargeButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54745A682219CBA800919750 /* LargeButtonCell.swift */; };
+		54745A6B2219CBD400919750 /* LargeButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54745A6A2219CBD400919750 /* LargeButtonCell.xib */; };
+		54745A6D2219CCD900919750 /* Pressable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54745A6C2219CCD900919750 /* Pressable.swift */; };
+		54745A712219D3BF00919750 /* SortingAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54745A702219D3BF00919750 /* SortingAlgorithm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +41,19 @@
 		54745A4D221990EE00919750 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		54745A4F2219943900919750 /* MainViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewCell.xib; sourceTree = "<group>"; };
 		54745A51221994A600919750 /* MainViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewCell.swift; sourceTree = "<group>"; };
+		54745A532219964B00919750 /* AlgorithmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmViewController.swift; sourceTree = "<group>"; };
+		54745A5522199A2100919750 /* AlgorithmDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmDataSource.swift; sourceTree = "<group>"; };
+		54745A5722199CC600919750 /* AlgorithmType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmType.swift; sourceTree = "<group>"; };
+		54745A5922199E2B00919750 /* AlgorithmAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmAnimation.swift; sourceTree = "<group>"; };
+		54745A5B22199F6500919750 /* SortingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingItem.swift; sourceTree = "<group>"; };
+		54745A5D2219A8F500919750 /* AlgorithmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmView.swift; sourceTree = "<group>"; };
+		54745A5F2219C04E00919750 /* AlgorithmCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmCell.swift; sourceTree = "<group>"; };
+		54745A612219C15800919750 /* AlgorithmCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlgorithmCell.xib; sourceTree = "<group>"; };
+		54745A662219CA5B00919750 /* AlgorithmDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmDelegate.swift; sourceTree = "<group>"; };
+		54745A682219CBA800919750 /* LargeButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeButtonCell.swift; sourceTree = "<group>"; };
+		54745A6A2219CBD400919750 /* LargeButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LargeButtonCell.xib; sourceTree = "<group>"; };
+		54745A6C2219CCD900919750 /* Pressable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pressable.swift; sourceTree = "<group>"; };
+		54745A702219D3BF00919750 /* SortingAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingAlgorithm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +86,54 @@
 		54745A3A2219906C00919750 /* Algorithms */ = {
 			isa = PBXGroup;
 			children = (
+				54745A6F2219CCE700919750 /* Protocols */,
+				54745A632219C5FD00919750 /* Enums */,
+				54745A652219C62D00919750 /* Model */,
 				54745A3B2219906C00919750 /* AppDelegate.swift */,
 				54745A3D2219906C00919750 /* ViewController.swift */,
 				54745A4D221990EE00919750 /* MainViewController.swift */,
 				54745A4F2219943900919750 /* MainViewCell.xib */,
 				54745A51221994A600919750 /* MainViewCell.swift */,
+				54745A662219CA5B00919750 /* AlgorithmDelegate.swift */,
+				54745A5522199A2100919750 /* AlgorithmDataSource.swift */,
+				54745A532219964B00919750 /* AlgorithmViewController.swift */,
+				54745A6A2219CBD400919750 /* LargeButtonCell.xib */,
+				54745A682219CBA800919750 /* LargeButtonCell.swift */,
+				54745A612219C15800919750 /* AlgorithmCell.xib */,
+				54745A5F2219C04E00919750 /* AlgorithmCell.swift */,
+				54745A5D2219A8F500919750 /* AlgorithmView.swift */,
+				54745A5922199E2B00919750 /* AlgorithmAnimation.swift */,
 				54745A3F2219906C00919750 /* Main.storyboard */,
 				54745A422219907300919750 /* Assets.xcassets */,
 				54745A442219907300919750 /* LaunchScreen.storyboard */,
 				54745A472219907300919750 /* Info.plist */,
 			);
 			path = Algorithms;
+			sourceTree = "<group>";
+		};
+		54745A632219C5FD00919750 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				54745A5722199CC600919750 /* AlgorithmType.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		54745A652219C62D00919750 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				54745A5B22199F6500919750 /* SortingItem.swift */,
+				54745A702219D3BF00919750 /* SortingAlgorithm.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		54745A6F2219CCE700919750 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				54745A6C2219CCD900919750 /* Pressable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +195,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				54745A462219907300919750 /* LaunchScreen.storyboard in Resources */,
+				54745A6B2219CBD400919750 /* LargeButtonCell.xib in Resources */,
+				54745A622219C15800919750 /* AlgorithmCell.xib in Resources */,
 				54745A502219943900919750 /* MainViewCell.xib in Resources */,
 				54745A432219907300919750 /* Assets.xcassets in Resources */,
 				54745A412219906C00919750 /* Main.storyboard in Resources */,
@@ -145,10 +210,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54745A672219CA5B00919750 /* AlgorithmDelegate.swift in Sources */,
+				54745A5C22199F6500919750 /* SortingItem.swift in Sources */,
+				54745A5622199A2100919750 /* AlgorithmDataSource.swift in Sources */,
+				54745A692219CBA800919750 /* LargeButtonCell.swift in Sources */,
+				54745A542219964B00919750 /* AlgorithmViewController.swift in Sources */,
+				54745A5A22199E2B00919750 /* AlgorithmAnimation.swift in Sources */,
+				54745A602219C04E00919750 /* AlgorithmCell.swift in Sources */,
 				54745A4E221990EE00919750 /* MainViewController.swift in Sources */,
+				54745A5822199CC600919750 /* AlgorithmType.swift in Sources */,
 				54745A52221994A600919750 /* MainViewCell.swift in Sources */,
 				54745A3E2219906C00919750 /* ViewController.swift in Sources */,
+				54745A6D2219CCD900919750 /* Pressable.swift in Sources */,
+				54745A5E2219A8F500919750 /* AlgorithmView.swift in Sources */,
 				54745A3C2219906C00919750 /* AppDelegate.swift in Sources */,
+				54745A712219D3BF00919750 /* SortingAlgorithm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
