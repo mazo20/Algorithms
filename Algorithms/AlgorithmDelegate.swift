@@ -13,7 +13,11 @@ class AlgorithmDelegate: ButtonDelegate {
     var algorithmView: AlgorithmView?
     
     func buttonPressed() {
-        algorithmView?.animateLayer()
+        algorithmView?.animateSorting()
+        
+    }
+    
+    func sort() {
         
     }
     

@@ -15,13 +15,22 @@ class AlgorithmDataSource {
     var items = [SortingItem]()
     
     
-    var animationSteps = [AlgorithmAnimation]()
+    var animations = [AlgorithmAnimation]()
     
     init(type: AlgorithmType, numberOfItems: Int) {
         self.type = type
         self.numberOfItems = numberOfItems
         
         generateItems()
+        produceAnimations()
+    }
+    
+    func produceAnimations() {
+        let swaps = SortingAlgorithm.bubbleSort(items: items)
+        
+        for swap in swaps {
+            
+        }
     }
     
     
@@ -35,6 +44,7 @@ class AlgorithmDataSource {
             let item = SortingItem(value: height, color: color)
             items.append(item)
         }
+        items.shuffle()
     }
     
     private func colorFor(value: Double) -> UIColor {

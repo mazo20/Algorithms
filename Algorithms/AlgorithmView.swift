@@ -11,6 +11,7 @@ import UIKit
 class AlgorithmView: UIView {
     
     private var itemLayers = [CALayer]()
+    private var sortingSteps = [(Int, Int)]()
     
     var dataSource: AlgorithmDataSource? {
         didSet {
@@ -35,30 +36,44 @@ class AlgorithmView: UIView {
         }
         let items = dataSource.items
         drawItems(rect, items: items)
+        getSortingSteps(items: items)
     }
     
     private func drawItems(_ rect: CGRect, items: [SortingItem]) {
         let itemWidth = rect.width / CGFloat(items.count)
         
         for (i, item) in items.enumerated() {
-            let rect = CGRect(x: CGFloat(i) * itemWidth, y: rect.height, width: itemWidth, height: -rect.height * CGFloat(item.value))
+            let rect = CGRect(x: 0, y: 0, width: itemWidth, height: -rect.height * CGFloat(item.value))
             let path = UIBezierPath(rect: rect)
             
             let layer = CAShapeLayer()
             layer.fillColor = item.color.cgColor
             layer.path = path.cgPath
+            layer.position = CGPoint(x: CGFloat(i) * itemWidth, y: frame.maxY)
             itemLayers.append(layer)
             
             self.layer.addSublayer(layer)
         }
     }
     
-    func animateLayer() {
-        let layer = itemLayers[20]
-        let newPosition = CGPoint(x: layer.position.x - 100, y: layer.position.y - 100)
-        let animation = AlgorithmAnimation(layer: layer, from: layer.position, to: newPosition)
-        animation.run(withDuration: 5) { _ in
-            print("Animation completed")
+    func getSortingSteps(items: [SortingItem]) {
+        sortingSteps = SortingAlgorithm.bubbleSort(items: items)
+    }
+    
+    
+    
+    func animateSorting() {
+        animate(index: 0)
+        
+    }
+    
+    func animate(index: Int) {
+        if index < 0 || index == sortingSteps.count { return }
+        let step = sortingSteps[index]
+        let animation = AlgorithmAnimation(layer1: itemLayers[step.0], layer2: itemLayers[step.1])
+        animation.run(withDuration: 0.1) { [weak self] _ in
+            self?.itemLayers.swapAt(step.0, step.1)
+            self?.animate(index: index + 1)
         }
     }
     

@@ -30,7 +30,7 @@ class AlgorithmViewController: UITableViewController {
         switch indexPath.row {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: algorithmCell, for: indexPath) as! AlgorithmCell
-            cell.algorithmView.dataSource = AlgorithmDataSource(type: .bubbleSort, numberOfItems: 50)
+            cell.algorithmView.dataSource = AlgorithmDataSource(type: .bubbleSort, numberOfItems: 10)
             algorithmDelegate.algorithmView = cell.algorithmView
             
             return cell
