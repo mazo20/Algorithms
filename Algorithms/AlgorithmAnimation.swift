@@ -11,6 +11,7 @@ import UIKit
 protocol Animatable {
     func run(withDuration duration: CFTimeInterval, completion: ((Bool) -> Void)?)
     func createAnimation(from: Any?, to: Any?) -> CABasicAnimation
+    func invalidate()
 }
 
 class AlgorithmAnimation: NSObject, CAAnimationDelegate, Animatable {
@@ -56,13 +57,18 @@ class AlgorithmAnimation: NSObject, CAAnimationDelegate, Animatable {
         self.completion = completion
     }
     
+    func invalidate() {
+        layer1.removeAllAnimations()
+        layer2.removeAllAnimations()
+    }
+    
     func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
         numberOfCompletions += 1
         guard let completion = completion else {
             return
         }
         if numberOfCompletions == 2 {
-            completion(true)
+            completion(flag)
             
         }
     }

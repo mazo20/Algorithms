@@ -22,10 +22,21 @@ class LargeButtonCell: UITableViewCell {
     
     override func awakeFromNib() {
         button.addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
+        //button.layer.shadowColor = UIColor.orange.cgColor
+        button.layer.shadowOffset = CGSize(width: 0, height: 4)
+        button.layer.shadowOpacity = 0.6
+        button.layer.shadowRadius = 4
+        
+    }
+    
+    override var backgroundColor: UIColor? {
+        didSet {
+            button.layer.shadowColor = backgroundColor?.cgColor
+        }
     }
     
     @objc func buttonPressed() {
-        delegate?.buttonPressed()
+        delegate?.buttonPressed(withTag: 0)
     }
     
 }

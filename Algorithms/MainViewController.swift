@@ -15,13 +15,16 @@ class MainViewController: UICollectionViewController {
     fileprivate let itemsPerRow: CGFloat = 2
     fileprivate let sectionInsets = UIEdgeInsets(top: 20, left: 16, bottom: 20, right: 16)
     
-    fileprivate let sortingTypes = ["Bubble sort", "Insertion sort", "Quicksort", "Heap sort", "Merge sort"]
     fileprivate var selectedCell: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let nib = UINib(nibName: mainViewCell, bundle: nil)
         collectionView.register(nib, forCellWithReuseIdentifier: mainViewCell)
+        
+        title = "Algorithms"
+        extendedLayoutIncludesOpaqueBars = true
+        
     }
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -29,27 +32,16 @@ class MainViewController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return AlgorithmModel.allCases.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: mainViewCell, for: indexPath) as! MainViewCell
         
-        cell.titleLabel.text = sortingTypes[indexPath.row]
+        cell.titleLabel.text = AlgorithmModel.allCases[indexPath.row].title
         cell.layer.cornerRadius = 8
         cell.clipsToBounds = true
-        switch indexPath.row {
-        case 0:
-            cell.backgroundColor = .red
-        case 1:
-            cell.backgroundColor = .green
-        case 2:
-            cell.backgroundColor = .blue
-        case 3:
-            cell.backgroundColor = .orange
-        default:
-            cell.backgroundColor = .purple
-        }
+        cell.backgroundColor = AlgorithmModel.allCases[indexPath.row].color
         
         
         return cell
@@ -65,7 +57,8 @@ class MainViewController: UICollectionViewController {
             print("Error getting AlgorithmViewController")
             return
         }
-        vc.title = sortingTypes[selectedCell]
+        vc.title = AlgorithmModel.allCases[selectedCell].title
+        vc.algorithmType = AlgorithmModel.allCases[selectedCell]
     }
     
 }

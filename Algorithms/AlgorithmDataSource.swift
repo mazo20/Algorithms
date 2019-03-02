@@ -10,41 +10,64 @@ import UIKit
 
 class AlgorithmDataSource {
     
-    let type: AlgorithmType
+    let sortingType: AlgorithmModel
     let numberOfItems: Int
+    
     var items = [SortingItem]()
+    private var steps = [SortingStep]()
+    private var currentMode: AlgorithmMode = .sorting
+    
+    private enum AlgorithmMode {
+        case sorting
+        case shuffling
+    }
+    
+    var nextStep: SortingStep? {
+        guard !steps.isEmpty else {
+            print("No more sorting steps")
+            return nil
+        }
+        let step = steps.removeFirst()
+        if let (i, j) = step.swapPosition {
+            items.swapAt(i, j)
+        }
+        return step
+    }
     
     
-    var animations = [AlgorithmAnimation]()
-    
-    init(type: AlgorithmType, numberOfItems: Int) {
-        self.type = type
+    init(type: AlgorithmModel, numberOfItems: Int) {
+        self.sortingType = type
         self.numberOfItems = numberOfItems
         
-        generateItems()
-        produceAnimations()
+        self.items = generateItems(numberOfItems)
     }
     
-    func produceAnimations() {
-        let swaps = SortingAlgorithm.bubbleSort(items: items)
-        
-        for swap in swaps {
-            
+    func sortItems() {
+        if currentMode == .sorting && !steps.isEmpty {
+            return
         }
+        currentMode = .sorting
+        (steps, _) = SortingAlgorithm.sort(items: items, with: sortingType)
     }
     
+    func shuffleItems() {
+        if currentMode == .shuffling && !steps.isEmpty { return }
+        currentMode = .shuffling
+        (steps, _) = SortingAlgorithm.shuffle(items: items)
+    }
     
-    
-    
-    private func generateItems() {
-        for i in 1...numberOfItems {
+    private func generateItems(_ number: Int) -> [SortingItem] {
+        //Generate n items with height from 0 to 1 and assign each of them a color. Shuffle at the end so that it's not sorted
+        var items = [SortingItem]()
+        for i in 1...number {
             //Height from 0 to 1
-            let height = Double(i)/Double(numberOfItems)
+            let height = Double(i)/Double(number)
             let color = colorFor(value: height)
             let item = SortingItem(value: height, color: color)
             items.append(item)
         }
         items.shuffle()
+        return items
     }
     
     private func colorFor(value: Double) -> UIColor {
@@ -72,8 +95,4 @@ class AlgorithmDataSource {
                        blue: CGFloat(color.blue)/255,
                        alpha: 1)
     }
-    
-    
-    
-    
 }

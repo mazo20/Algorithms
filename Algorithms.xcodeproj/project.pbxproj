@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		540FF67B22245064008C869C /* TableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540FF67A22245064008C869C /* TableViewHeader.swift */; };
+		540FF67D2228463E008C869C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540FF67C2228463E008C869C /* SettingsViewController.swift */; };
 		54745A3C2219906C00919750 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54745A3B2219906C00919750 /* AppDelegate.swift */; };
 		54745A3E2219906C00919750 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54745A3D2219906C00919750 /* ViewController.swift */; };
 		54745A412219906C00919750 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54745A3F2219906C00919750 /* Main.storyboard */; };
@@ -29,9 +31,23 @@
 		54745A6D2219CCD900919750 /* Pressable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54745A6C2219CCD900919750 /* Pressable.swift */; };
 		54745A712219D3BF00919750 /* SortingAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54745A702219D3BF00919750 /* SortingAlgorithm.swift */; };
 		54745A732219E2CD00919750 /* Shuffle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54745A722219E2CD00919750 /* Shuffle+Extension.swift */; };
+		54745A75221AB3BD00919750 /* SegmentedControlCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54745A74221AB3BD00919750 /* SegmentedControlCell.swift */; };
+		54745A78221AB3F200919750 /* SegmentedControlCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54745A77221AB3F200919750 /* SegmentedControlCell.xib */; };
+		54745A7A221ACB2200919750 /* ControlButtonsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54745A79221ACB2200919750 /* ControlButtonsCell.xib */; };
+		54745A7C221ACC6000919750 /* ControlButtonsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54745A7B221ACC6000919750 /* ControlButtonsCell.swift */; };
+		54745A7E221C1D0900919750 /* AlgorithmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54745A7D221C1D0900919750 /* AlgorithmModel.swift */; };
+		54745A80221C897500919750 /* AnimationSpeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54745A7F221C897500919750 /* AnimationSpeed.swift */; };
+		54745A82221C8EAB00919750 /* DescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54745A81221C8EAB00919750 /* DescriptionCell.swift */; };
+		54745A84221C8F1500919750 /* DescriptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54745A83221C8F1500919750 /* DescriptionCell.xib */; };
+		54745A86221DC89100919750 /* ToolbarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54745A85221DC89100919750 /* ToolbarView.xib */; };
+		54745A88221DC98500919750 /* ToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54745A87221DC98500919750 /* ToolbarView.swift */; };
+		54C50BBC221EAB3E00C7B166 /* SortingStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C50BBB221EAB3E00C7B166 /* SortingStep.swift */; };
+		54C50BBE221EB0F500C7B166 /* HighlightAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C50BBD221EB0F500C7B166 /* HighlightAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		540FF67A22245064008C869C /* TableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHeader.swift; sourceTree = "<group>"; };
+		540FF67C2228463E008C869C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		54745A382219906C00919750 /* Algorithms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algorithms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54745A3B2219906C00919750 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54745A3D2219906C00919750 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +72,18 @@
 		54745A6C2219CCD900919750 /* Pressable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pressable.swift; sourceTree = "<group>"; };
 		54745A702219D3BF00919750 /* SortingAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingAlgorithm.swift; sourceTree = "<group>"; };
 		54745A722219E2CD00919750 /* Shuffle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Shuffle+Extension.swift"; sourceTree = "<group>"; };
+		54745A74221AB3BD00919750 /* SegmentedControlCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlCell.swift; sourceTree = "<group>"; };
+		54745A77221AB3F200919750 /* SegmentedControlCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SegmentedControlCell.xib; sourceTree = "<group>"; };
+		54745A79221ACB2200919750 /* ControlButtonsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ControlButtonsCell.xib; sourceTree = "<group>"; };
+		54745A7B221ACC6000919750 /* ControlButtonsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlButtonsCell.swift; sourceTree = "<group>"; };
+		54745A7D221C1D0900919750 /* AlgorithmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmModel.swift; sourceTree = "<group>"; };
+		54745A7F221C897500919750 /* AnimationSpeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationSpeed.swift; sourceTree = "<group>"; };
+		54745A81221C8EAB00919750 /* DescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionCell.swift; sourceTree = "<group>"; };
+		54745A83221C8F1500919750 /* DescriptionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DescriptionCell.xib; sourceTree = "<group>"; };
+		54745A85221DC89100919750 /* ToolbarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToolbarView.xib; sourceTree = "<group>"; };
+		54745A87221DC98500919750 /* ToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarView.swift; sourceTree = "<group>"; };
+		54C50BBB221EAB3E00C7B166 /* SortingStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingStep.swift; sourceTree = "<group>"; };
+		54C50BBD221EB0F500C7B166 /* HighlightAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,23 +117,23 @@
 			isa = PBXGroup;
 			children = (
 				54745A722219E2CD00919750 /* Shuffle+Extension.swift */,
+				54745A3B2219906C00919750 /* AppDelegate.swift */,
 				54745A6F2219CCE700919750 /* Protocols */,
 				54745A632219C5FD00919750 /* Enums */,
 				54745A652219C62D00919750 /* Model */,
-				54745A3B2219906C00919750 /* AppDelegate.swift */,
+				54745A76221AB3C700919750 /* Cells */,
 				54745A3D2219906C00919750 /* ViewController.swift */,
 				54745A4D221990EE00919750 /* MainViewController.swift */,
-				54745A4F2219943900919750 /* MainViewCell.xib */,
-				54745A51221994A600919750 /* MainViewCell.swift */,
+				54745A532219964B00919750 /* AlgorithmViewController.swift */,
+				540FF67C2228463E008C869C /* SettingsViewController.swift */,
+				540FF67A22245064008C869C /* TableViewHeader.swift */,
+				54745A85221DC89100919750 /* ToolbarView.xib */,
+				54745A87221DC98500919750 /* ToolbarView.swift */,
 				54745A662219CA5B00919750 /* AlgorithmDelegate.swift */,
 				54745A5522199A2100919750 /* AlgorithmDataSource.swift */,
-				54745A532219964B00919750 /* AlgorithmViewController.swift */,
-				54745A6A2219CBD400919750 /* LargeButtonCell.xib */,
-				54745A682219CBA800919750 /* LargeButtonCell.swift */,
-				54745A612219C15800919750 /* AlgorithmCell.xib */,
-				54745A5F2219C04E00919750 /* AlgorithmCell.swift */,
 				54745A5D2219A8F500919750 /* AlgorithmView.swift */,
 				54745A5922199E2B00919750 /* AlgorithmAnimation.swift */,
+				54C50BBD221EB0F500C7B166 /* HighlightAnimation.swift */,
 				54745A3F2219906C00919750 /* Main.storyboard */,
 				54745A422219907300919750 /* Assets.xcassets */,
 				54745A442219907300919750 /* LaunchScreen.storyboard */,
@@ -118,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				54745A5722199CC600919750 /* AlgorithmType.swift */,
+				54745A7F221C897500919750 /* AnimationSpeed.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -127,6 +156,8 @@
 			children = (
 				54745A5B22199F6500919750 /* SortingItem.swift */,
 				54745A702219D3BF00919750 /* SortingAlgorithm.swift */,
+				54C50BBB221EAB3E00C7B166 /* SortingStep.swift */,
+				54745A7D221C1D0900919750 /* AlgorithmModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -137,6 +168,25 @@
 				54745A6C2219CCD900919750 /* Pressable.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		54745A76221AB3C700919750 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				54745A4F2219943900919750 /* MainViewCell.xib */,
+				54745A51221994A600919750 /* MainViewCell.swift */,
+				54745A6A2219CBD400919750 /* LargeButtonCell.xib */,
+				54745A682219CBA800919750 /* LargeButtonCell.swift */,
+				54745A79221ACB2200919750 /* ControlButtonsCell.xib */,
+				54745A7B221ACC6000919750 /* ControlButtonsCell.swift */,
+				54745A612219C15800919750 /* AlgorithmCell.xib */,
+				54745A5F2219C04E00919750 /* AlgorithmCell.swift */,
+				54745A77221AB3F200919750 /* SegmentedControlCell.xib */,
+				54745A74221AB3BD00919750 /* SegmentedControlCell.swift */,
+				54745A83221C8F1500919750 /* DescriptionCell.xib */,
+				54745A81221C8EAB00919750 /* DescriptionCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,12 +247,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54745A78221AB3F200919750 /* SegmentedControlCell.xib in Resources */,
 				54745A462219907300919750 /* LaunchScreen.storyboard in Resources */,
 				54745A6B2219CBD400919750 /* LargeButtonCell.xib in Resources */,
 				54745A622219C15800919750 /* AlgorithmCell.xib in Resources */,
+				54745A84221C8F1500919750 /* DescriptionCell.xib in Resources */,
 				54745A502219943900919750 /* MainViewCell.xib in Resources */,
+				54745A86221DC89100919750 /* ToolbarView.xib in Resources */,
 				54745A432219907300919750 /* Assets.xcassets in Resources */,
 				54745A412219906C00919750 /* Main.storyboard in Resources */,
+				54745A7A221ACB2200919750 /* ControlButtonsCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +267,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54745A88221DC98500919750 /* ToolbarView.swift in Sources */,
+				54745A80221C897500919750 /* AnimationSpeed.swift in Sources */,
 				54745A672219CA5B00919750 /* AlgorithmDelegate.swift in Sources */,
 				54745A5C22199F6500919750 /* SortingItem.swift in Sources */,
 				54745A5622199A2100919750 /* AlgorithmDataSource.swift in Sources */,
@@ -220,13 +276,21 @@
 				54745A542219964B00919750 /* AlgorithmViewController.swift in Sources */,
 				54745A5A22199E2B00919750 /* AlgorithmAnimation.swift in Sources */,
 				54745A602219C04E00919750 /* AlgorithmCell.swift in Sources */,
+				54745A82221C8EAB00919750 /* DescriptionCell.swift in Sources */,
+				54745A75221AB3BD00919750 /* SegmentedControlCell.swift in Sources */,
+				54C50BBE221EB0F500C7B166 /* HighlightAnimation.swift in Sources */,
+				54745A7E221C1D0900919750 /* AlgorithmModel.swift in Sources */,
 				54745A732219E2CD00919750 /* Shuffle+Extension.swift in Sources */,
+				54745A7C221ACC6000919750 /* ControlButtonsCell.swift in Sources */,
+				54C50BBC221EAB3E00C7B166 /* SortingStep.swift in Sources */,
 				54745A4E221990EE00919750 /* MainViewController.swift in Sources */,
+				540FF67B22245064008C869C /* TableViewHeader.swift in Sources */,
 				54745A5822199CC600919750 /* AlgorithmType.swift in Sources */,
 				54745A52221994A600919750 /* MainViewCell.swift in Sources */,
 				54745A3E2219906C00919750 /* ViewController.swift in Sources */,
 				54745A6D2219CCD900919750 /* Pressable.swift in Sources */,
 				54745A5E2219A8F500919750 /* AlgorithmView.swift in Sources */,
+				540FF67D2228463E008C869C /* SettingsViewController.swift in Sources */,
 				54745A3C2219906C00919750 /* AppDelegate.swift in Sources */,
 				54745A712219D3BF00919750 /* SortingAlgorithm.swift in Sources */,
 			);

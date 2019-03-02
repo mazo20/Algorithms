@@ -9,5 +9,9 @@
 import Foundation
 
 protocol ButtonDelegate {
-    func buttonPressed()
+    func buttonPressed(withTag: Int)
+}
+
+protocol SegmentedControlDelegate {
+    func valueDidChange(to: Int)
 }

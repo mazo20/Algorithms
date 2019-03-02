@@ -8,10 +8,10 @@
 
 import Foundation
 
-enum AlgorithmType {
-    case bubbleSort
-    case mergeSort
-    case quicksort
-    case mergesort
-    case heapsort
+enum AlgorithmType: String {
+    case bubbleSort = "Bubble sort"
+    case mergeSort = "Merge sort"
+    case quicksort = "Quicksort"
+    case insertionSort = "Insertion sort"
+    case heapsort = "Heap sort"
 }

@@ -25,4 +25,10 @@ class MainViewCell: UICollectionViewCell {
     func commonInit() {
         //contentView.backgroundColor = .white
     }
+    
+    override func awakeFromNib() {
+        self.layer.shadowColor = UIColor.red.cgColor
+        self.layer.shadowRadius = 5
+        self.layer.shadowOffset = CGSize(width: 0, height: 3)
+    }
 }

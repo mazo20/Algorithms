@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Nv3-x3-PaG" customClass="ToolbarView" customModule="Algorithms" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="383" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="LWZ-J1-AGD">
+                    <rect key="frame" x="20" y="10" width="343" height="67"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qRG-ol-2tn">
+                            <rect key="frame" x="0.0" y="0.0" width="129" height="67"/>
+                            <color key="backgroundColor" red="0.98431372549999996" green="0.68235294120000001" blue="0.090196078430000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Shuffle">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73Y-PP-vHH">
+                            <rect key="frame" x="149" y="0.0" width="194" height="67"/>
+                            <color key="backgroundColor" red="0.98431372549999996" green="0.68235294120000001" blue="0.090196078430000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Sort">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="73Y-PP-vHH" firstAttribute="width" secondItem="qRG-ol-2tn" secondAttribute="width" multiplier="3:2" id="HL5-wy-Yzk"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="LWZ-J1-AGD" firstAttribute="leading" secondItem="hSa-MX-3D2" secondAttribute="leading" constant="20" id="YLp-A1-SR7"/>
+                <constraint firstAttribute="bottom" secondItem="LWZ-J1-AGD" secondAttribute="bottom" constant="10" id="efr-07-bVZ"/>
+                <constraint firstItem="hSa-MX-3D2" firstAttribute="trailing" secondItem="LWZ-J1-AGD" secondAttribute="trailing" constant="20" id="iGS-FY-7rp"/>
+                <constraint firstItem="LWZ-J1-AGD" firstAttribute="top" secondItem="Nv3-x3-PaG" secondAttribute="top" constant="10" id="nie-MY-vFc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="hSa-MX-3D2"/>
+            <connections>
+                <outlet property="leftButton" destination="qRG-ol-2tn" id="0Z0-L5-RFt"/>
+                <outlet property="rightButton" destination="73Y-PP-vHH" id="Ifz-oy-efi"/>
+            </connections>
+            <point key="canvasLocation" x="84" y="-96.7016491754123"/>
+        </view>
+    </objects>
+</document>
